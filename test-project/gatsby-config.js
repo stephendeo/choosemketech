@@ -12,7 +12,7 @@ module.exports = {
     title: `Gatsby WordPress Twenty Twenty`,
     description: `Gatsby starter site for Twenty Twenty Gatsby Theme.`,
     author: `@henrikwirth`,
-    siteUrl: process.env.SITE_URL || `http://choosemketech.test/`,
+    siteUrl: process.env.SITE_URL || `https://clients.appit.co/graphql/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.WPGRAPHQL_URL || `http://choosemketech.test/graphql`,
+        url: process.env.WPGRAPHQL_URL || `https://clients.appit.co/graphql`,
         verbose: true,
         develop: {
           hardCacheMediaFiles: true,
